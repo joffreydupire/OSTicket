@@ -1,6 +1,6 @@
 www:
   container_name: www_osticket
-  image: joffreydupire/osticket:1.0
+  image: joffreydupire/osticket:1.9.12
   ports:
     - "8080:80"
   links:
