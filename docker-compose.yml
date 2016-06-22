@@ -6,7 +6,7 @@ www:
   links:
     - mysql:mysql
   volumes:
-    - /www:/var/www/html/
+    - ./www:/var/www/html/
   restart: always
 
 # Database container
@@ -16,5 +16,5 @@ mysql:
   env_file:
     - ./mysql_glpi.env
   volumes:
-    - /db:/var/lib/mysql
+    - ./db:/var/lib/mysql
   restart: always
