@@ -2,7 +2,7 @@ www:
   container_name: www_osticket
   image: joffreydupire/osticket:1.9.12
   ports:
-    - "8080:80"
+    - "8081:80"
   links:
     - mysql:mysql
   volumes:
